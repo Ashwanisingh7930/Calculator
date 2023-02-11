@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- Create the display -->
+      <input type="text" id="display" value="0" disabled />
+      
+      <!-- Create the buttons -->
+      <button onclick="display.value += '1'">1</button>
+      <button onclick="display.value += '2'">2</button>
+      <button onclick="display.value += '3'">3</button>
+      <button onclick="display.value += '+'">+</button>
+      <br>
+      <button onclick="display.value += '4'">4</button>
+      <button onclick="display.value += '5'">5</button>
+      <button onclick="display.value += '6'">6</button>
+      <button onclick="display.value += '-'">-</button>
+      <br>
+      <button onclick="display.value += '7'">7</button>
+      <button onclick="display.value += '8'">8</button>
+      <button onclick="display.value += '9'">9</button>
+      <button onclick="display.value += '*'">x</button>
+      <br>
+      <button onclick="display.value = '0'">C</button>
+      <button onclick="display.value += '0'">0</button>
+      <button onclick="display.value = eval(display.value)">=</button>
+      <button onclick="display.value += '/'">/</button>
+    </div>
+  </body>
+</html>
